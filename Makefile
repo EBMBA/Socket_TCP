@@ -18,7 +18,7 @@ LFLAGS =
 OUTPUT	:= output
 
 # define source directory
-SRCSRV		:= src/srv 
+SRCSRV		:= src/srv/multisrv 
 SRCCLIENT	:= src/client
 
 
