@@ -23,5 +23,7 @@ jobs:
       run : make server
     - name : Make client program
       run : make client
+    - name : give rights 
+      run : sudo chmod u+x test_launch.sh
     - name : Execute launch sequence
       run : ./test_launch.sh 
