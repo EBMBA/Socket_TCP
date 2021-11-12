@@ -1,4 +1,6 @@
 #!/bin/bash
-./output/server
-sleep 2
-./output/client 
+(sleep 1 && timeout 3 ./output/client)&
+timeout 4 ./output/server
+if [ $? -eq 0 ]; then 
+    exit
+fi
